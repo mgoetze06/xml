@@ -74,7 +74,7 @@
 		
 		<!-- hier xsl choose einfügen, Wenn keine Version angegeben - No Version information, wenn nur Version ohne Datum, Version und Datum-->		
 		<td>
-			Version <xsl:value-of select="version"/> released in <xsl:value-of select="format-number(releaseMonth,'00')"/>/<xsl:value-of select="format-number(latestRelease/releaseYear,'0000')"/>
+			Version <xsl:value-of select="version"/> released in <xsl:value-of select="format-number(releaseMonth,'00')"/>/<xsl:value-of select="format-number(releaseYear,'0000')"/>
 		</td>
 	</xsl:template>
 	
