@@ -14,7 +14,13 @@
 			<releaseMonth>12</releaseMonth>
 			<releaseYear>2021</releaseYear>
 		</latestRelease>
-		<logo>logo</logo>
+		<github available="Single">
+			<contributors>1368</contributors>
+			<releases>57</releases>
+			<codingLanguage name="C++" share="87.5"/>
+			<codingLanguage name="C" share="3.8"/>
+			<codingLanguage name="Python" share="2.7"/>
+		</github>
 	</tool>
 	<tool type="application">
 		<name>LinuxCNC</name>
@@ -25,10 +31,15 @@
 		<link>linuxcnc.org/</link>
 		<latestRelease>
 			<version>2.8.2</version>
-			<releaseMonth>12</releaseMonth>
+			<releaseMonth>6</releaseMonth>
 			<releaseYear>2021</releaseYear>
 		</latestRelease>
-		<logo>logo</logo>
+		<github available="Single">
+			<contributors>159</contributors>
+			<codingLanguage share="38.2">Python</codingLanguage>
+			<codingLanguage share="28.6">C</codingLanguage>
+			<codingLanguage share="23.7">C++</codingLanguage>		
+		</github>
 	</tool>
 	<tool type="library">
 		<name>xsltproc</name>
@@ -42,6 +53,8 @@
 			<releaseMonth/>
 			<releaseYear/>
 		</latestRelease>
-		<logo>logo</logo>
+		
+		<github available="Multiple"> #There is no single project, multiple wrappers etc. exist		
+		</github>
 	</tool>
 </tools>
