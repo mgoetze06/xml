@@ -14,7 +14,7 @@
 			<releaseMonth>12</releaseMonth>
 			<releaseYear>2021</releaseYear>
 		</latestRelease>
-		<github available="Single">
+		<github available="single">
 			<contributors>1368</contributors>
 			<releases>57</releases>
 			<codingLanguage name="C++" share="87.5"/>
@@ -34,11 +34,12 @@
 			<releaseMonth>6</releaseMonth>
 			<releaseYear>2021</releaseYear>
 		</latestRelease>
-		<github available="Single">
+		<github available="single">
 			<contributors>159</contributors>
-			<codingLanguage share="38.2">Python</codingLanguage>
-			<codingLanguage share="28.6">C</codingLanguage>
-			<codingLanguage share="23.7">C++</codingLanguage>		
+			<releases></releases>
+			<codingLanguage name="Python" share="38.2"/>
+			<codingLanguage name="C" share="28.6"/>
+			<codingLanguage name="C++" share="23.7"/>		
 		</github>
 	</tool>
 	<tool type="library">
@@ -54,7 +55,7 @@
 			<releaseYear/>
 		</latestRelease>
 		
-		<github available="Multiple"> #There is no single project, multiple wrappers etc. exist		
+		<github available="multiple"> #There is no single project, multiple wrappers etc. exist		
 		</github>
 	</tool>
 </tools>
