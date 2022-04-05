@@ -29,7 +29,7 @@
 			<td style="width:20%">
 				<b>Description</b>
 			</td>
-			<td>
+			<td style="width:6%">
 				<b>Reference</b>
 			</td>
 			<td>
@@ -47,17 +47,21 @@
 			<xsl:variable name="toolType">
 				<xsl:value-of select="@type"/>
 			</xsl:variable>
-			<xsl:call-template name="name"></xsl:call-template>
+			<xsl:apply-templates select="name"/>
 			<xsl:call-template name="type">
 				<xsl:with-param name="toolType" select="$toolType"/>
 			</xsl:call-template>
-			
-			<xsl:apply-templates/> <!--ruft alle folgenden templates auf-->
+			<xsl:apply-templates select="description"/>
+			<xsl:apply-templates select="link"/>
+			<xsl:apply-templates select="latestRelease"/>
+			<xsl:apply-templates select="github"/>
+
+			<!--<xsl:apply-templates/>--> <!--ruft alle folgenden templates auf-->
 		</tr>
 	</xsl:template>
-	<xsl:template name="name">
+	<xsl:template match="name">
 		<td>
-			<xsl:value-of select="name"/><!--<xsl:value-of select="."/>-->
+			<xsl:value-of select="."/><!--<xsl:value-of select="."/>-->
 		</td>
 	</xsl:template>
 	<xsl:template match="description">
@@ -71,10 +75,17 @@
 		</td>
 	</xsl:template>
 	<xsl:template match="latestRelease">
-		
-		<!-- hier xsl choose einfügen, Wenn keine Version angegeben - No Version information, wenn nur Version ohne Datum, Version und Datum-->		
+		<xsl:variable name="versionInfo" select="./child::*[1]"></xsl:variable>
 		<td>
-			Version <xsl:value-of select="version"/> released in <xsl:value-of select="format-number(releaseMonth,'00')"/>/<xsl:value-of select="format-number(releaseYear,'0000')"/>
+		<xsl:choose>
+			<xsl:when test="$versionInfo = ''">
+			No version information.
+			</xsl:when>
+
+			<xsl:otherwise>
+			Version <xsl:copy-of select="$versionInfo"/> released in <xsl:value-of select="format-number(releaseMonth,'00')"/>/<xsl:value-of select="format-number(releaseYear,'0000')"/>
+			</xsl:otherwise>
+		</xsl:choose>
 		</td>
 	</xsl:template>
 	
@@ -83,7 +94,7 @@
 		<xsl:choose>
 			<xsl:when test="@available='single'">
 				<!--There is a single github project page containing all project documentation--> 
-				<xsl:value-of select="contributors"/> contributors worked on <xsl:value-of select="releases"/> releases.
+				<xsl:value-of select="contributors"/> contributors worked on <xsl:value-of select="releases"/> releases with these coding languages:
 			</xsl:when>
 			<xsl:when test="@available='multiple'">
 				<!--There is a single github project page containing all project documentation--> 
