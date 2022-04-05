@@ -52,46 +52,40 @@
 				<xsl:with-param name="toolType" select="$toolType"/>
 			</xsl:call-template>
 			
-			
-			<xsl:call-template name="description"></xsl:call-template>
-			<xsl:call-template name="link"></xsl:call-template>
-			<xsl:call-template name="latestRelease"></xsl:call-template>
-			<xsl:call-template name="github"></xsl:call-template>
-			
-			<!--<xsl:apply-templates/>--> <!--ruft alle folgenden templates auf-->
+			<xsl:apply-templates/> <!--ruft alle folgenden templates auf-->
 		</tr>
 	</xsl:template>
-	<xsl:template name="name" match="name">
+	<xsl:template name="name">
 		<td>
 			<xsl:value-of select="name"/><!--<xsl:value-of select="."/>-->
 		</td>
 	</xsl:template>
-	<xsl:template name="description">
+	<xsl:template match="description">
 		<td>
-			<xsl:value-of select="description/shortDescr"/><!--<xsl:value-of select="."/>-->
+			<xsl:value-of select="shortDescr"/><!--<xsl:value-of select="."/>-->
 		</td>
 	</xsl:template>
-	<xsl:template name="link">
+	<xsl:template match="link">
 		<td>
-			<xsl:value-of select="link"/><!--<xsl:value-of select="."/>-->
+			<xsl:value-of select="."/><!--<xsl:value-of select="."/>-->
 		</td>
 	</xsl:template>
-	<xsl:template name="latestRelease">
+	<xsl:template match="latestRelease">
 		
 		<!-- hier xsl choose einfügen, Wenn keine Version angegeben - No Version information, wenn nur Version ohne Datum, Version und Datum-->		
 		<td>
-			Version <xsl:value-of select="latestRelease/version"/> released in <xsl:value-of select="format-number(latestRelease/releaseMonth,'00')"/>/<xsl:value-of select="format-number(latestRelease/releaseYear,'0000')"/>
+			Version <xsl:value-of select="version"/> released in <xsl:value-of select="format-number(releaseMonth,'00')"/>/<xsl:value-of select="format-number(latestRelease/releaseYear,'0000')"/>
 		</td>
 	</xsl:template>
 	
-	<xsl:template name="github">
+	<xsl:template match="github">
 	<td>
 		<xsl:choose>
-			<xsl:when test="github/@available='single'">
+			<xsl:when test="@available='single'">
 				<!--There is a single github project page containing all project documentation--> 
 				<xsl:value-of select="contributors"/> contributors worked on <xsl:value-of select="releases"/> releases.
 			</xsl:when>
-			<xsl:when test="github/@available='multiple'">
+			<xsl:when test="@available='multiple'">
 				<!--There is a single github project page containing all project documentation--> 
 				<!--<xsl:value-of select="format-number(.,'00')"/>-->
 				There is no single project on Github, multiple wrappers etc. exist.	
@@ -100,20 +94,24 @@
 		
 		</xsl:choose>
 	
-		<xsl:call-template name="codingLanguage">
-</xsl:call-template>
+		<xsl:apply-templates select="codingLanguage"/>
 	</td>
 	</xsl:template>
 	
-	<xsl:template name="codingLanguage">
+	<xsl:template match="codingLanguage">
 	<li>
-		<xsl:value-of select="codingLanguage/@name"/> (<xsl:value-of select="codingLanguage/@share"/>%)	
+		<xsl:value-of select="@name"/> (<xsl:value-of select="@share"/>%)	
 	</li>
 	</xsl:template>
 	<xsl:template name="type">
 		<xsl:param name="toolType"/>
 		<td>
-			<xsl:value-of select="$toolType"/>
+			<!--<xsl:value-of select="$toolType"/>
+-->
+			<xsl:choose>
+  				<xsl:when test="$toolType='library'">Library</xsl:when>
+  				<xsl:otherwise>Standalone Application</xsl:otherwise>
+			</xsl:choose>
 		</td>
 	</xsl:template>
 </xsl:stylesheet>
