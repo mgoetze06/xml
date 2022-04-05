@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New XML document created with EditiX XML Editor (http://www.editix.com) at Mon Apr 04 19:06:24 CEST 2022 -->
+<tools>
+	<tool type="library">
+		<name>OpenCV</name>
+		<description>
+			<shortDescr>OpenCV is a library that includes computer vision algorithms</shortDescr>
+			<longDescr>OpenCV (Open Source Computer Vision Library: http://opencv.org) is an open-source library that includes several hundreds of computer vision algorithms. The document describes the so-called OpenCV 2.x API, which is essentially a C++ API, as opposed to the C-based OpenCV 1.x API (C API is deprecated and not tested with "C" compiler since OpenCV 2.4 releases)</longDescr>
+		</description>
+		<link>http://opencv.org</link>
+		<latestRelease>
+			<version>4.5.5</version>
+			<releaseMonth>12</releaseMonth>
+			<releaseYear>2021</releaseYear>
+		</latestRelease>
+		<logo>logo</logo>
+	</tool>
+	<tool type="application">
+		<name>LinuxCNC</name>
+		<description>
+			<shortDescr>LinuxCNC controls CNC machines.</shortDescr>
+			<longDescr>LinuxCNC controls CNC machines. It can drive milling machines, lathes, 3D printers, laser cutters, plasma cutters, robot arms, hexapods, and more.</longDescr>
+		</description>
+		<link>linuxcnc.org/</link>
+		<latestRelease>
+			<version>2.8.2</version>
+			<releaseMonth>12</releaseMonth>
+			<releaseYear>2021</releaseYear>
+		</latestRelease>
+		<logo>logo</logo>
+	</tool>
+	<tool type="library">
+		<name>xsltproc</name>
+		<description>
+			<shortDescr>xsltproc is a command line tool for applying XSLT stylesheets to XML documents.</shortDescr>
+			<longDescr>xsltproc is a command line tool for applying XSLT stylesheets to XML documents. It is part of libxslt, the XSLT C library for GNOME. While it was developed as part of the GNOME project, it can operate independently of the GNOME desktop.</longDescr>
+		</description>
+		<link>http://www.xmlsoft.org/xslt/xsltproc.html</link>
+		<latestRelease>
+			<version/>
+			<releaseMonth/>
+			<releaseYear/>
+		</latestRelease>
+		<logo>logo</logo>
+	</tool>
+</tools>
