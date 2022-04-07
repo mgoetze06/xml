@@ -34,12 +34,11 @@
 					<fo:table-cell column-number="1">
 						<fo:block margin="1mm">
 							<xsl:value-of select="@type"/>	
-							<xsl:value-of select="name"/>
+							<xsl:value-of select="name"/><!-- this is a new comment-->
 						</fo:block>		
 					</fo:table-cell>
 				</fo:table-row>
 			</fo:table-body>
 		</fo:table>
 	</xsl:template>
-	sduifhsdjkf
 </xsl:stylesheet>
