@@ -58,4 +58,109 @@
 		<github available="multiple"> #There is no single project, multiple wrappers etc. exist		
 		</github>
 	</tool>
+	<tool type="application">
+		<name>GNU Octave</name>
+		<description>
+			<shortDescr>GNU Octave is a high-level interpreted language, primarily intended
+for numerical computations.</shortDescr>
+			<longDescr>GNU Octave is a high-level interpreted language, primarily intended
+for numerical computations.  It provides capabilities for the
+numerical solution of linear and nonlinear problems, and for
+performing other numerical experiments.  It also provides extensive
+graphics capabilities for data visualization and manipulation.  GNU
+Octave is normally used through its interactive interface (CLI and
+GUI), but it can also be used to write non-interactive programs.
+The GNU Octave language is quite similar to Matlab so that most
+programs are easily portable.</longDescr>
+		</description>
+		<link>https://www.gnu.org/software/octave/index</link>
+		<latestRelease>
+			<version>6.4.0</version>
+			<releaseMonth>10</releaseMonth>
+			<releaseYear>2021</releaseYear>
+		</latestRelease>
+		<github available="single">
+			<contributors>198</contributors>
+			<releases></releases>
+			<codingLanguage name="C++" share="60.7"/>
+			<codingLanguage name="MATLAB" share="24.7"/>
+			<codingLanguage name="C" share="3.5"/>		
+		</github>
+	</tool>
+	<tool type="application">
+		<name>Node.js</name>
+		<description>
+			<shortDescr>Node.js is an open-source, cross-platform, JavaScript runtime environment.</shortDescr>
+			<longDescr>Node.js is similar in design to, and influenced by, systems like Ruby's Event Machine and Python's Twisted. Node.js takes the event model a bit further. It presents an event loop as a runtime construct instead of as a library. In other systems, there is always a blocking call to start the event-loop. Typically, behavior is defined through callbacks at the beginning of a script, and at the end a server is started through a blocking call like EventMachine::run(). In Node.js, there is no such start-the-event-loop call. Node.js simply enters the event loop after executing the input script. Node.js exits the event loop when there are no more callbacks to perform. This behavior is like browser JavaScript — the event loop is hidden from the user.</longDescr>
+		</description>
+		<link>nodejs.org</link>
+		<latestRelease>
+			<version>17.8.0</version>
+			<releaseMonth>03</releaseMonth>
+			<releaseYear>2022</releaseYear>
+		</latestRelease>
+		<github available="single">
+			<contributors>3097</contributors>
+			<releases></releases>
+			<codingLanguage name="JavaScript" share="61.3"/>
+			<codingLanguage name="C++" share="21.4"/>
+			<codingLanguage name="Python" share="12.4"/>		
+		</github>
+	</tool>
+	<tool type="application">
+		<name>Inkscape</name>
+		<description>
+			<shortDescr>Inkscape can take you from this stage to a final, professional-grade design format which is ready for publication on the web or in physical form.</shortDescr>
+			<longDescr>The design process may begin by doodles on a napkin, a sketched mindmap, a photo of a memorable object, or a mockup in software which really wouldn't work to complete the project.</longDescr>
+		</description>
+		<link>https://inkscape.org/</link>
+		<latestRelease>
+			<version>1.1.2</version>
+			<releaseMonth></releaseMonth>
+			<releaseYear></releaseYear>
+		</latestRelease>
+		<github available="multiple">		
+		</github>
+	</tool>
+	<tool type="application">
+		<name></name>
+		<description>
+			<shortDescr></shortDescr>
+			<longDescr></longDescr>
+		</description>
+		<link></link>
+		<latestRelease>
+			<version>6.4.0</version>
+			<releaseMonth>30</releaseMonth>
+			<releaseYear>2021</releaseYear>
+		</latestRelease>
+		<github available="single">
+			<contributors>198</contributors>
+			<releases></releases>
+			<codingLanguage name="C++" share="60.7"/>
+			<codingLanguage name="MATLAB" share="24.7"/>
+			<codingLanguage name="C" share="3.5"/>		
+		</github>
+	</tool>
+	<tool type="application">
+		<name></name>
+		<description>
+			<shortDescr></shortDescr>
+			<longDescr></longDescr>
+		</description>
+		<link></link>
+		<latestRelease>
+			<version>6.4.0</version>
+			<releaseMonth>30</releaseMonth>
+			<releaseYear>2021</releaseYear>
+		</latestRelease>
+		<github available="single">
+			<contributors>198</contributors>
+			<releases></releases>
+			<codingLanguage name="C++" share="60.7"/>
+			<codingLanguage name="MATLAB" share="24.7"/>
+			<codingLanguage name="C" share="3.5"/>		
+		</github>
+	</tool>
+	
 </tools>
