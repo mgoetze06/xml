@@ -27,18 +27,164 @@
 		<fo:block margin-bottom="5mm" >
 			<fo:inline> </fo:inline>
 		</fo:block>
-		<fo:table width="265mm" border-style="single" border-width="1pt" background-color="lightgreen">
-			<fo:table-column column-number="1" column-width="100%" border-style="single" border-width="1pt"/>
+		<fo:table width="265mm" border-style="single" border-width="1pt">
+			<fo:table-column column-number="1" column-width="20%" border-style="single" border-width="1pt" text-align="center"/>
+			<fo:table-column column-number="2" column-width="80%" border-style="single" border-width="1pt" text-align="center"/>
 			<fo:table-body>
-				<fo:table-row border-style="single" border-width="1pt">
-					<fo:table-cell column-number="1">
-						<fo:block margin="1mm">
-							<xsl:value-of select="@type"/>	
-							<xsl:value-of select="name"/><!-- this is a new comment-->
-						</fo:block>		
-					</fo:table-cell>
-				</fo:table-row>
+				<xsl:variable name="toolType">
+					<xsl:value-of select="@type"/>
+				</xsl:variable>
+				
+				<xsl:apply-templates select="name"/>
+				
+				<xsl:call-template name="type">
+					<xsl:with-param name="toolType" select="$toolType"/>
+				</xsl:call-template>
+				<xsl:apply-templates select="description"/>
+				<xsl:apply-templates select="link"/>
+				<xsl:apply-templates select="latestRelease"/>
+				<xsl:apply-templates select="github"/>
 			</fo:table-body>
 		</fo:table>
 	</xsl:template>
+
+
+
+
+
+<xsl:template match="name">
+				<fo:table-row border-style="single" border-width="1pt" background-color="lightgreen">
+					<fo:table-cell column-number="1">
+						<fo:block margin="1mm">
+							<fo:inline>Name </fo:inline>
+						</fo:block>		
+					</fo:table-cell>
+					<fo:table-cell column-number="2">
+						<fo:block margin="1mm">	
+							<xsl:value-of select="."/><!-- this is a new comment-->
+						</fo:block>		
+					</fo:table-cell>					
+				</fo:table-row>
+</xsl:template>
+<xsl:template name="type">
+	<xsl:param name="toolType"/>
+				<fo:table-row border-style="single" border-width="1pt">
+					<fo:table-cell column-number="1">
+						<fo:block margin="1mm">
+							<fo:inline>Type </fo:inline>
+						</fo:block>		
+					</fo:table-cell>
+					<fo:table-cell column-number="2">
+						<fo:block margin="1mm">	
+							<xsl:choose>
+								<xsl:when test="$toolType='library'">Library</xsl:when>
+								<xsl:otherwise>Standalone Application</xsl:otherwise>
+							</xsl:choose>
+						</fo:block>		
+					</fo:table-cell>					
+				</fo:table-row>
+</xsl:template>
+
+<xsl:template match="description">
+				<fo:table-row border-style="single" border-width="1pt">
+					<fo:table-cell column-number="1">
+						<fo:block margin="1mm">
+							<fo:inline>Description </fo:inline>
+						</fo:block>		
+					</fo:table-cell>
+					<fo:table-cell column-number="2">
+						<fo:block margin="1mm">	
+							<xsl:value-of select="shortDescr"/>
+						</fo:block>		
+					</fo:table-cell>					
+				</fo:table-row>
+</xsl:template>
+<xsl:template match="link">
+				<fo:table-row border-style="single" border-width="1pt">
+					<fo:table-cell column-number="1">
+						<fo:block margin="1mm">
+							<fo:inline>Link </fo:inline>
+						</fo:block>		
+					</fo:table-cell>
+					<fo:table-cell column-number="2">
+						<fo:block margin="1mm">	
+							<xsl:value-of select="."/>
+						</fo:block>		
+					</fo:table-cell>					
+				</fo:table-row>
+</xsl:template>
+<xsl:template match="latestRelease">
+	<xsl:variable name="versionInfo" select="./child::*[1]"></xsl:variable>
+				<fo:table-row border-style="single" border-width="1pt">
+					<fo:table-cell column-number="1">
+						<fo:block margin="1mm">
+							<fo:inline>Latest Release </fo:inline>
+						</fo:block>		
+					</fo:table-cell>
+					<fo:table-cell column-number="2">
+						<fo:block margin="1mm">	
+
+								<xsl:choose>
+									<xsl:when test="$versionInfo = ''">
+									No version information.
+									</xsl:when>
+
+									<xsl:otherwise>
+									Version <xsl:value-of select="version"/> released in <xsl:value-of select="format-number(releaseMonth,'00')"/>/<xsl:value-of select="format-number(releaseYear,'0000')"/>
+									</xsl:otherwise>
+								</xsl:choose>
+							
+							
+							
+						</fo:block>		
+					</fo:table-cell>					
+				</fo:table-row>
+</xsl:template>
+<xsl:template match="github">
+				<fo:table-row border-style="single" border-width="1pt">
+					<fo:table-cell column-number="1">
+						<fo:block margin="1mm">
+							<fo:inline>Github </fo:inline>
+						</fo:block>		
+					</fo:table-cell>
+					<fo:table-cell column-number="2">
+						<fo:block margin="1mm">	
+							<xsl:choose>
+								<xsl:when test="@available='single'">
+									<!--There is a single github project page containing all project documentation--> 
+									<xsl:value-of select="contributors"/> contributors worked on <xsl:value-of select="releases"/> releases with these coding languages:
+								</xsl:when>
+								<xsl:when test="@available='multiple'">
+									<!--There is a single github project page containing all project documentation--> 
+									<!--<xsl:value-of select="format-number(.,'00')"/>-->
+									There is no single project on Github, multiple wrappers etc. exist.	
+								</xsl:when>			
+								<xsl:otherwise>No Github information</xsl:otherwise>
+							
+							</xsl:choose> 
+							<xsl:apply-templates select="codingLanguage"/>
+
+							
+							
+						</fo:block>		
+					</fo:table-cell>					
+				</fo:table-row>
+
+</xsl:template>
+<xsl:template match="codingLanguage">
+							<fo:list-block>
+								<fo:list-item>
+								 <fo:list-item-label>
+								   <fo:block></fo:block>
+								 </fo:list-item-label>
+								 <fo:list-item-body>
+								 	<fo:block>
+										<xsl:value-of select="@name"/> (<xsl:value-of select="@share"/>%)
+									</fo:block>
+								 </fo:list-item-body>
+								 </fo:list-item>
+							</fo:list-block>
+
+</xsl:template>
+
 </xsl:stylesheet>
