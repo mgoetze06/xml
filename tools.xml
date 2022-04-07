@@ -122,45 +122,4 @@ programs are easily portable.</longDescr>
 		<github available="multiple">		
 		</github>
 	</tool>
-	<tool type="application">
-		<name></name>
-		<description>
-			<shortDescr></shortDescr>
-			<longDescr></longDescr>
-		</description>
-		<link></link>
-		<latestRelease>
-			<version>6.4.0</version>
-			<releaseMonth>30</releaseMonth>
-			<releaseYear>2021</releaseYear>
-		</latestRelease>
-		<github available="single">
-			<contributors>198</contributors>
-			<releases></releases>
-			<codingLanguage name="C++" share="60.7"/>
-			<codingLanguage name="MATLAB" share="24.7"/>
-			<codingLanguage name="C" share="3.5"/>		
-		</github>
-	</tool>
-	<tool type="application">
-		<name></name>
-		<description>
-			<shortDescr></shortDescr>
-			<longDescr></longDescr>
-		</description>
-		<link></link>
-		<latestRelease>
-			<version>6.4.0</version>
-			<releaseMonth>30</releaseMonth>
-			<releaseYear>2021</releaseYear>
-		</latestRelease>
-		<github available="single">
-			<contributors>198</contributors>
-			<releases></releases>
-			<codingLanguage name="C++" share="60.7"/>
-			<codingLanguage name="MATLAB" share="24.7"/>
-			<codingLanguage name="C" share="3.5"/>		
-		</github>
-	</tool>
-	
 </tools>

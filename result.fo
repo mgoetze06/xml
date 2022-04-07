@@ -15,12 +15,103 @@
          <fo:block margin-bottom="5mm">
             <fo:inline/>
          </fo:block>
-         <fo:table width="265mm" border-style="single" border-width="1pt" background-color="lightgreen">
-            <fo:table-column column-number="1" column-width="100%" border-style="single" border-width="1pt"/>
+         <fo:table width="265mm" border-style="single" border-width="1pt">
+            <fo:table-column column-number="1" column-width="20%" border-style="single" border-width="1pt" text-align="center"/>
+            <fo:table-column column-number="2" column-width="80%" border-style="single" border-width="1pt" text-align="center"/>
             <fo:table-body>
+               <fo:table-row border-style="single" border-width="1pt" background-color="lightgreen">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Name </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">OpenCV</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
                <fo:table-row border-style="single" border-width="1pt">
                   <fo:table-cell column-number="1">
-                     <fo:block margin="1mm">libraryOpenCV</fo:block>
+                     <fo:block margin="1mm">
+                        <fo:inline>Type </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">Library</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Description </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">OpenCV is a library that includes computer vision algorithms</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Link </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">http://opencv.org</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Latest Release </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">
+									Version 4.5.5 released in 12/2021</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Github </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">1368 contributors worked on 57 releases with these coding languages:
+								<fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>C++ (87.5%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                        <fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>C (3.8%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                        <fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>Python (2.7%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                     </fo:block>
                   </fo:table-cell>
                </fo:table-row>
             </fo:table-body>
@@ -28,12 +119,103 @@
          <fo:block margin-bottom="5mm">
             <fo:inline/>
          </fo:block>
-         <fo:table width="265mm" border-style="single" border-width="1pt" background-color="lightgreen">
-            <fo:table-column column-number="1" column-width="100%" border-style="single" border-width="1pt"/>
+         <fo:table width="265mm" border-style="single" border-width="1pt">
+            <fo:table-column column-number="1" column-width="20%" border-style="single" border-width="1pt" text-align="center"/>
+            <fo:table-column column-number="2" column-width="80%" border-style="single" border-width="1pt" text-align="center"/>
             <fo:table-body>
+               <fo:table-row border-style="single" border-width="1pt" background-color="lightgreen">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Name </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">LinuxCNC</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
                <fo:table-row border-style="single" border-width="1pt">
                   <fo:table-cell column-number="1">
-                     <fo:block margin="1mm">applicationLinuxCNC</fo:block>
+                     <fo:block margin="1mm">
+                        <fo:inline>Type </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">Standalone Application</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Description </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">LinuxCNC controls CNC machines.</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Link </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">linuxcnc.org/</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Latest Release </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">
+									Version 2.8.2 released in 06/2021</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Github </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">159 contributors worked on  releases with these coding languages:
+								<fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>Python (38.2%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                        <fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>C (28.6%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                        <fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>C++ (23.7%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                     </fo:block>
                   </fo:table-cell>
                </fo:table-row>
             </fo:table-body>
@@ -41,12 +223,74 @@
          <fo:block margin-bottom="5mm">
             <fo:inline/>
          </fo:block>
-         <fo:table width="265mm" border-style="single" border-width="1pt" background-color="lightgreen">
-            <fo:table-column column-number="1" column-width="100%" border-style="single" border-width="1pt"/>
+         <fo:table width="265mm" border-style="single" border-width="1pt">
+            <fo:table-column column-number="1" column-width="20%" border-style="single" border-width="1pt" text-align="center"/>
+            <fo:table-column column-number="2" column-width="80%" border-style="single" border-width="1pt" text-align="center"/>
             <fo:table-body>
+               <fo:table-row border-style="single" border-width="1pt" background-color="lightgreen">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Name </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">xsltproc</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
                <fo:table-row border-style="single" border-width="1pt">
                   <fo:table-cell column-number="1">
-                     <fo:block margin="1mm">libraryxsltproc</fo:block>
+                     <fo:block margin="1mm">
+                        <fo:inline>Type </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">Library</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Description </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">xsltproc is a command line tool for applying XSLT stylesheets to XML documents.</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Link </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">http://www.xmlsoft.org/xslt/xsltproc.html</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Latest Release </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">
+									No version information.
+									</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Github </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">
+									 
+									
+									There is no single project on Github, multiple wrappers etc. exist.	
+								</fo:block>
                   </fo:table-cell>
                </fo:table-row>
             </fo:table-body>
@@ -54,12 +298,104 @@
          <fo:block margin-bottom="5mm">
             <fo:inline/>
          </fo:block>
-         <fo:table width="265mm" border-style="single" border-width="1pt" background-color="lightgreen">
-            <fo:table-column column-number="1" column-width="100%" border-style="single" border-width="1pt"/>
+         <fo:table width="265mm" border-style="single" border-width="1pt">
+            <fo:table-column column-number="1" column-width="20%" border-style="single" border-width="1pt" text-align="center"/>
+            <fo:table-column column-number="2" column-width="80%" border-style="single" border-width="1pt" text-align="center"/>
             <fo:table-body>
+               <fo:table-row border-style="single" border-width="1pt" background-color="lightgreen">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Name </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">GNU Octave</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
                <fo:table-row border-style="single" border-width="1pt">
                   <fo:table-cell column-number="1">
-                     <fo:block margin="1mm">applicationGNU Octave</fo:block>
+                     <fo:block margin="1mm">
+                        <fo:inline>Type </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">Standalone Application</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Description </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">GNU Octave is a high-level interpreted language, primarily intended
+for numerical computations.</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Link </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">https://www.gnu.org/software/octave/index</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Latest Release </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">
+									Version 6.4.0 released in 10/2021</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Github </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">198 contributors worked on  releases with these coding languages:
+								<fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>C++ (60.7%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                        <fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>MATLAB (24.7%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                        <fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>C (3.5%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                     </fo:block>
                   </fo:table-cell>
                </fo:table-row>
             </fo:table-body>
@@ -67,12 +403,103 @@
          <fo:block margin-bottom="5mm">
             <fo:inline/>
          </fo:block>
-         <fo:table width="265mm" border-style="single" border-width="1pt" background-color="lightgreen">
-            <fo:table-column column-number="1" column-width="100%" border-style="single" border-width="1pt"/>
+         <fo:table width="265mm" border-style="single" border-width="1pt">
+            <fo:table-column column-number="1" column-width="20%" border-style="single" border-width="1pt" text-align="center"/>
+            <fo:table-column column-number="2" column-width="80%" border-style="single" border-width="1pt" text-align="center"/>
             <fo:table-body>
+               <fo:table-row border-style="single" border-width="1pt" background-color="lightgreen">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Name </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">Node.js</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
                <fo:table-row border-style="single" border-width="1pt">
                   <fo:table-cell column-number="1">
-                     <fo:block margin="1mm">applicationNode.js</fo:block>
+                     <fo:block margin="1mm">
+                        <fo:inline>Type </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">Standalone Application</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Description </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">Node.js is an open-source, cross-platform, JavaScript runtime environment.</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Link </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">nodejs.org</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Latest Release </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">
+									Version 17.8.0 released in 03/2022</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Github </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">3097 contributors worked on  releases with these coding languages:
+								<fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>JavaScript (61.3%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                        <fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>C++ (21.4%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                        <fo:list-block>
+                           <fo:list-item>
+                              <fo:list-item-label>
+                                 <fo:block/>
+                              </fo:list-item-label>
+                              <fo:list-item-body>
+                                 <fo:block>Python (12.4%)
+									</fo:block>
+                              </fo:list-item-body>
+                           </fo:list-item>
+                        </fo:list-block>
+                     </fo:block>
                   </fo:table-cell>
                </fo:table-row>
             </fo:table-body>
@@ -80,38 +507,73 @@
          <fo:block margin-bottom="5mm">
             <fo:inline/>
          </fo:block>
-         <fo:table width="265mm" border-style="single" border-width="1pt" background-color="lightgreen">
-            <fo:table-column column-number="1" column-width="100%" border-style="single" border-width="1pt"/>
+         <fo:table width="265mm" border-style="single" border-width="1pt">
+            <fo:table-column column-number="1" column-width="20%" border-style="single" border-width="1pt" text-align="center"/>
+            <fo:table-column column-number="2" column-width="80%" border-style="single" border-width="1pt" text-align="center"/>
             <fo:table-body>
-               <fo:table-row border-style="single" border-width="1pt">
+               <fo:table-row border-style="single" border-width="1pt" background-color="lightgreen">
                   <fo:table-cell column-number="1">
-                     <fo:block margin="1mm">applicationInkscape</fo:block>
+                     <fo:block margin="1mm">
+                        <fo:inline>Name </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">Inkscape</fo:block>
                   </fo:table-cell>
                </fo:table-row>
-            </fo:table-body>
-         </fo:table>
-         <fo:block margin-bottom="5mm">
-            <fo:inline/>
-         </fo:block>
-         <fo:table width="265mm" border-style="single" border-width="1pt" background-color="lightgreen">
-            <fo:table-column column-number="1" column-width="100%" border-style="single" border-width="1pt"/>
-            <fo:table-body>
                <fo:table-row border-style="single" border-width="1pt">
                   <fo:table-cell column-number="1">
-                     <fo:block margin="1mm">application</fo:block>
+                     <fo:block margin="1mm">
+                        <fo:inline>Type </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">Standalone Application</fo:block>
                   </fo:table-cell>
                </fo:table-row>
-            </fo:table-body>
-         </fo:table>
-         <fo:block margin-bottom="5mm">
-            <fo:inline/>
-         </fo:block>
-         <fo:table width="265mm" border-style="single" border-width="1pt" background-color="lightgreen">
-            <fo:table-column column-number="1" column-width="100%" border-style="single" border-width="1pt"/>
-            <fo:table-body>
                <fo:table-row border-style="single" border-width="1pt">
                   <fo:table-cell column-number="1">
-                     <fo:block margin="1mm">application</fo:block>
+                     <fo:block margin="1mm">
+                        <fo:inline>Description </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">Inkscape can take you from this stage to a final, professional-grade design format which is ready for publication on the web or in physical form.</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Link </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">https://inkscape.org/</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Latest Release </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">
+									Version 1.1.2 released in NaN/NaN</fo:block>
+                  </fo:table-cell>
+               </fo:table-row>
+               <fo:table-row border-style="single" border-width="1pt">
+                  <fo:table-cell column-number="1">
+                     <fo:block margin="1mm">
+                        <fo:inline>Github </fo:inline>
+                     </fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell column-number="2">
+                     <fo:block margin="1mm">
+									 
+									
+									There is no single project on Github, multiple wrappers etc. exist.	
+								</fo:block>
                   </fo:table-cell>
                </fo:table-row>
             </fo:table-body>
