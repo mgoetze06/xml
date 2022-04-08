@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="github">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element ref="contributors" minOccurs="0"/>
+				<xs:element ref="releases" minOccurs="0"/>
+				<xs:element ref="codingLanguage" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="available" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="releaseMonth" type="xs:string"/>
+	<xs:element name="link" type="xs:string"/>
+	<xs:element name="codingLanguage">
+		<xs:complexType>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+			<xs:attribute name="share" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="description">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="shortDescr"/>
+				<xs:element ref="longDescr"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tools">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tool" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="version" type="xs:string"/>
+	<xs:element name="tool">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name"/>
+				<xs:element ref="description"/>
+				<xs:element ref="link"/>
+				<xs:element ref="latestRelease"/>
+				<xs:element ref="github"/>
+			</xs:sequence>
+			<xs:attribute name="type" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="releases" type="xs:string"/>
+	<xs:element name="latestRelease">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="version"/>
+				<xs:element ref="releaseMonth"/>
+				<xs:element ref="releaseYear"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="shortDescr" type="xs:string"/>
+	<xs:element name="name" type="xs:string"/>
+	<xs:element name="longDescr" type="xs:string"/>
+	<xs:element name="contributors" type="xs:string"/>
+	<xs:element name="releaseYear" type="xs:string"/>
+</xs:schema>
