@@ -4,12 +4,13 @@
 		<html>
 			<head>
 				<title>
-        Open Source Tool Collection
-    </title>
+				Open Source Tool Collection
+				</title>
+
 			</head>
-			<body style="font-family:Arial, Helvetica, sans-serif;font-size:12pt; color:green">
+			<body style="font-family:Arial, Helvetica, sans-serif;font-size:12pt; color:darkgreen; vertical-align: top">
 				<p class="title">Open Source Tool Collection</p>
-				<table class="dash" cellspacing="4" cellpadding="8">
+				<table class="dash" cellspacing="4" cellpadding="8" style="vertical-align:top" >
 					<xsl:apply-templates select="tools"/>
 				</table>
 			</body>
@@ -17,10 +18,10 @@
 	</xsl:template>
 	<xsl:template match="tools">
 		<tr>
-			<td colspan="8" style="font-family:Arial, Helvetica, sans-serif;font-size:1.5em; color:green">Inventory of Open Source Tools</td>
+			<td colspan="8" style="font-family:Arial, Helvetica, sans-serif;font-size:1.5em; color:darkgreen; vertical-align: top">Inventory of Open Source Tools</td>
 		</tr>
 		<tr>
-			<td style="width:5%">
+			<td style="width:5%"  >
 				<b>Tool Name</b>
 			</td>
 			<td style="width:7%">
@@ -60,41 +61,55 @@
 		</tr>
 	</xsl:template>
 	<xsl:template match="name">
-		<td>
+		<td style="vertical-align:top">
 			<xsl:value-of select="."/><!--<xsl:value-of select="."/>-->
 		</td>
 	</xsl:template>
 	<xsl:template match="description">
-		<td>
+		<td style="vertical-align:top">
 			<xsl:value-of select="shortDescr"/><!--<xsl:value-of select="."/>-->
 		</td>
 	</xsl:template>
 	<xsl:template match="link">
-		<td>
+		<td style="vertical-align:top">
 			<xsl:value-of select="."/><!--<xsl:value-of select="."/>-->
 		</td>
 	</xsl:template>
 	<xsl:template match="latestRelease">
 		<xsl:variable name="versionInfo" select="./child::*[1]"></xsl:variable>
-		<td>
+		<td style="vertical-align:top">
 		<xsl:choose>
 			<xsl:when test="$versionInfo = ''">
 			No version information.
 			</xsl:when>
 
 			<xsl:otherwise>
-			Version <xsl:copy-of select="$versionInfo"/> released in <xsl:value-of select="format-number(releaseMonth,'00')"/>/<xsl:value-of select="format-number(releaseYear,'0000')"/>
+				Version <xsl:copy-of select="$versionInfo"/> 
+				<xsl:choose>
+					<xsl:when test="releaseMonth != ''">
+						 released in <xsl:value-of select="format-number(releaseMonth,'00')"/>/<xsl:value-of select="format-number(releaseYear,'0000')"/>
+			
+					</xsl:when>
+				</xsl:choose>			
+			
 			</xsl:otherwise>
 		</xsl:choose>
 		</td>
 	</xsl:template>
 	
 	<xsl:template match="github">
-	<td>
+	<td style="vertical-align:top">
 		<xsl:choose>
 			<xsl:when test="@available='single'">
 				<!--There is a single github project page containing all project documentation--> 
-				<xsl:value-of select="contributors"/> contributors worked on <xsl:value-of select="releases"/> releases with these coding languages:
+				<xsl:value-of select="contributors"/> contributors worked on 
+					<xsl:choose>
+						<xsl:when test="releases!=''">
+							<xsl:value-of select="releases"/>
+						</xsl:when>
+						<xsl:otherwise>multiple</xsl:otherwise>
+					</xsl:choose>
+				releases with these coding languages:
 			</xsl:when>
 			<xsl:when test="@available='multiple'">
 				<!--There is a single github project page containing all project documentation--> 
@@ -116,7 +131,7 @@
 	</xsl:template>
 	<xsl:template name="type">
 		<xsl:param name="toolType"/>
-		<td>
+		<td style="vertical-align:top">
 			<!--<xsl:value-of select="$toolType"/>
 -->
 			<xsl:choose>

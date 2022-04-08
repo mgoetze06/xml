@@ -130,7 +130,14 @@
 									</xsl:when>
 
 									<xsl:otherwise>
-									Version <xsl:value-of select="version"/> released in <xsl:value-of select="format-number(releaseMonth,'00')"/>/<xsl:value-of select="format-number(releaseYear,'0000')"/>
+										Version 
+										<xsl:copy-of select="$versionInfo"/> 
+										<xsl:choose>
+											<xsl:when test="releaseMonth != ''">
+												 released in <xsl:value-of select="format-number(releaseMonth,'00')"/>/<xsl:value-of select="format-number(releaseYear,'0000')"/>
+									
+											</xsl:when>
+										</xsl:choose>				
 									</xsl:otherwise>
 								</xsl:choose>
 							
@@ -152,7 +159,14 @@
 							<xsl:choose>
 								<xsl:when test="@available='single'">
 									<!--There is a single github project page containing all project documentation--> 
-									<xsl:value-of select="contributors"/> contributors worked on <xsl:value-of select="releases"/> releases with these coding languages:
+									<xsl:value-of select="contributors"/> contributors worked on 
+										<xsl:choose>
+											<xsl:when test="releases!=''">
+												<xsl:value-of select="releases"/>
+											</xsl:when>
+											<xsl:otherwise>multiple</xsl:otherwise>
+										</xsl:choose>
+									releases with these coding languages:
 								</xsl:when>
 								<xsl:when test="@available='multiple'">
 									<!--There is a single github project page containing all project documentation--> 
