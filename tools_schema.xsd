@@ -43,7 +43,14 @@
 				<xs:element ref="latestRelease"/>
 				<xs:element ref="github"/>
 			</xs:sequence>
-			<xs:attribute name="type" type="xs:string" use="required"/>
+			<xs:attribute name="type" use="required">
+					<xsd:simpleType>
+						<xsd:restriction base="xsd:string">
+							<xsd:enumeration value="single"/>
+							<xsd:enumeration value="multiple"/>
+						</xsd:restriction>
+					</xsd:simpleType>
+			</xs:attribute>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="releases" type="xs:string"/>
