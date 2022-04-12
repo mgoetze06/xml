@@ -1,0 +1,122 @@
+<tools>
+	<tool type="library">
+		<name>OpenCV</name>
+		<description>
+			<shortDescr>OpenCV is a library that includes computer vision algorithms</shortDescr>
+			<longDescr>OpenCV (Open Source Computer Vision Library: http://opencv.org) is an open-source library that includes several hundreds of computer vision algorithms. The document describes the so-called OpenCV 2.x API, which is essentially a C++ API, as opposed to the C-based OpenCV 1.x API (C API is deprecated and not tested with "C" compiler since OpenCV 2.4 releases)</longDescr>
+		</description>
+		<link>http://opencv.org</link>
+		<latestRelease>
+			<version>4.5.5</version>
+			<releaseMonth>12</releaseMonth>
+			<releaseYear>2021</releaseYear>
+		</latestRelease>
+		<github available="single">
+			<contributors>1368</contributors>
+			<releases>57</releases>
+			<codingLanguage name="C++" share="87.5"/>
+			<codingLanguage name="C" share="3.8"/>
+			<codingLanguage name="Python" share="2.7"/>
+		</github>
+	</tool>
+	<tool type="application">
+		<name>LinuxCNC</name>
+		<description>
+			<shortDescr>LinuxCNC controls CNC machines.</shortDescr>
+			<longDescr>LinuxCNC controls CNC machines. It can drive milling machines, lathes, 3D printers, laser cutters, plasma cutters, robot arms, hexapods, and more.</longDescr>
+		</description>
+		<link>linuxcnc.org/</link>
+		<latestRelease>
+			<version>2.8.2</version>
+			<releaseMonth>6</releaseMonth>
+			<releaseYear>2021</releaseYear>
+		</latestRelease>
+		<github available="single">
+			<contributors>159</contributors>
+			<releases></releases>
+			<codingLanguage name="Python" share="38.2"/>
+			<codingLanguage name="C" share="28.6"/>
+			<codingLanguage name="C++" share="23.7"/>		
+		</github>
+	</tool>
+	<tool type="library">
+		<name>xsltproc</name>
+		<description>
+			<shortDescr>xsltproc is a command line tool for applying XSLT stylesheets to XML documents.</shortDescr>
+			<longDescr>xsltproc is a command line tool for applying XSLT stylesheets to XML documents. It is part of libxslt, the XSLT C library for GNOME. While it was developed as part of the GNOME project, it can operate independently of the GNOME desktop.</longDescr>
+		</description>
+		<link>http://www.xmlsoft.org/xslt/xsltproc.html</link>
+		<latestRelease>
+			<version/>
+			<releaseMonth/>
+			<releaseYear/>
+		</latestRelease>
+		
+		<github available="multiple"> #There is no single project, multiple wrappers etc. exist		
+		</github>
+	</tool>
+	<tool type="application">
+		<name>GNU Octave</name>
+		<description>
+			<shortDescr>GNU Octave is a high-level interpreted language, primarily intended
+for numerical computations.</shortDescr>
+			<longDescr>GNU Octave is a high-level interpreted language, primarily intended
+for numerical computations.  It provides capabilities for the
+numerical solution of linear and nonlinear problems, and for
+performing other numerical experiments.  It also provides extensive
+graphics capabilities for data visualization and manipulation.  GNU
+Octave is normally used through its interactive interface (CLI and
+GUI), but it can also be used to write non-interactive programs.
+The GNU Octave language is quite similar to Matlab so that most
+programs are easily portable.</longDescr>
+		</description>
+		<link>https://www.gnu.org/software/octave/index</link>
+		<latestRelease>
+			<version>6.4.0</version>
+			<releaseMonth>10</releaseMonth>
+			<releaseYear>2021</releaseYear>
+		</latestRelease>
+		<github available="single">
+			<contributors>198</contributors>
+			<releases></releases>
+			<codingLanguage name="C++" share="60.7"/>
+			<codingLanguage name="MATLAB" share="24.7"/>
+			<codingLanguage name="C" share="3.5"/>		
+		</github>
+	</tool>
+	<tool type="application">
+		<name>Node.js</name>
+		<description>
+			<shortDescr>Node.js is an open-source, cross-platform, JavaScript runtime environment.</shortDescr>
+			<longDescr>Node.js is similar in design to, and influenced by, systems like Ruby's Event Machine and Python's Twisted. Node.js takes the event model a bit further. It presents an event loop as a runtime construct instead of as a library. In other systems, there is always a blocking call to start the event-loop. Typically, behavior is defined through callbacks at the beginning of a script, and at the end a server is started through a blocking call like EventMachine::run(). In Node.js, there is no such start-the-event-loop call. Node.js simply enters the event loop after executing the input script. Node.js exits the event loop when there are no more callbacks to perform. This behavior is like browser JavaScript — the event loop is hidden from the user.</longDescr>
+		</description>
+		<link>nodejs.org</link>
+		<latestRelease>
+			<version>17.8.0</version>
+			<releaseMonth>03</releaseMonth>
+			<releaseYear>2022</releaseYear>
+		</latestRelease>
+		<github available="single">
+			<contributors>3097</contributors>
+			<releases></releases>
+			<codingLanguage name="JavaScript" share="61.3"/>
+			<codingLanguage name="C++" share="21.4"/>
+			<codingLanguage name="Python" share="12.4"/>		
+		</github>
+	</tool>
+	<tool type="application">
+		<name>Inkscape</name>
+		<description>
+			<shortDescr>Inkscape can take you from this stage to a final, professional-grade design format which is ready for publication on the web or in physical form.</shortDescr>
+			<longDescr>The design process may begin by doodles on a napkin, a sketched mindmap, a photo of a memorable object, or a mockup in software which really wouldn't work to complete the project.</longDescr>
+		</description>
+		<link>https://inkscape.org/</link>
+		<latestRelease>
+			<version>1.1.2</version>
+			<releaseMonth></releaseMonth>
+			<releaseYear></releaseYear>
+		</latestRelease>
+		<github available="multiple">		
+		</github>
+	</tool>
+</tools>
