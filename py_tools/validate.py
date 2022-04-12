@@ -40,5 +40,6 @@ def readSchema():
     validation(tools_xmlschema,filename_schema, tools_xml, filename_1)
     validation(tools_xmlschema,filename_schema, tools_xml_invalid,filename_2)
 
+
 if __name__ == "__main__":
     readSchema()
