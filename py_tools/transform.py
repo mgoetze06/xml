@@ -3,9 +3,8 @@ from lxml import etree #https://lxml.de/validation.html
 xslt = etree.parse("tools_html.xsl") #parse xsl file
 xslt_par = etree.parse("tools_html_param.xsl")
 xml = etree.parse("tools.xml") #parse xml file
-#this is a change
 
-#Transform with parameters --> z.B. rot oder grüne schriftfarbe https://stackoverflow.com/questions/35595940/example-for-setting-multiple-parameters-in-python-lxml-xslt
+#normal transform from xml to html
 def transformToHtml():
     transform = etree.XSLT(xslt)
     newdom = transform(xml)
@@ -14,6 +13,8 @@ def transformToHtml():
     outfile = open("result_html.html", 'w+')
     outfile.write(infile)
 
+
+#Transform with parameters --> z.B. Ändern der Überschrift
 def transformToHtmlParam():
     transform = etree.XSLT(xslt_par)
     #lom_tree = xslt(original_tree, var1=etree.XSLT.strparam("str_example"), var2=etree.XSLT.strparam(var))
