@@ -1,0 +1,6 @@
+Checking document:  tools.xml
+tools.xml  is valid against  tools_schema.xsd !
+Checking document:  tools_invalid.xml
+tools_invalid.xml  is invalid against  tools_schema.xsd !
+
+Process finished with exit code 0
