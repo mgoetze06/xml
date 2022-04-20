@@ -2,7 +2,7 @@ from lxml import etree #https://lxml.de/validation.html
 
 xslt = etree.parse("tools_html.xsl") #parse xsl file
 xslt_par = etree.parse("tools_html_param.xsl")
-xml = etree.parse("tools.xml") #parse xml file
+xml = etree.parse("tools.xml")  #parse xml file
 
 #normal transform from xml to html
 def transformToHtml():

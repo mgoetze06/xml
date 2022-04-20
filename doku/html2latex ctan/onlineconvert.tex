@@ -1,0 +1,354 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={tools\_schema.xsd},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{tools\_schema.xsd}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\hypertarget{schema-tools_schema.xsd}{%
+\section{\texorpdfstring{Schema {tools\_schema.xsd
+}}{Schema tools\_schema.xsd }}\label{schema-tools_schema.xsd}}
+
+\hypertarget{element}{%
+\subsubsection{element}\label{element}}
+
+\protect\hyperlink{element_codingLanguage}{codingLanguage} \textbar{}
+\protect\hyperlink{element_contributors}{contributors} \textbar{}
+\protect\hyperlink{element_description}{description} \textbar{}
+\protect\hyperlink{element_github}{github} \textbar{}
+\protect\hyperlink{element_latestRelease}{latestRelease} \textbar{}
+\protect\hyperlink{element_link}{link} \textbar{}
+\protect\hyperlink{element_longDescr}{longDescr} \textbar{}
+\protect\hyperlink{element_name}{name} \textbar{}
+\protect\hyperlink{element_releaseMonth}{releaseMonth} \textbar{}
+\protect\hyperlink{element_releaseYear}{releaseYear} \textbar{}
+\protect\hyperlink{element_releases}{releases} \textbar{}
+\protect\hyperlink{element_shortDescr}{shortDescr} \textbar{}
+\protect\hyperlink{element_tool}{tool} \textbar{}
+\protect\hyperlink{element_tools}{tools} \textbar{}
+\protect\hyperlink{element_version}{version}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_github}{}{}
+
+\hypertarget{element-github}{%
+\subsection{\texorpdfstring{Element { github
+}}{Element  github }}\label{element-github}}
+
+{element github}
+
+\hypertarget{elements}{%
+\subsubsection{Elements}\label{elements}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Element & Type & Documentation \\
+\midrule
+\endhead
+\protect\hyperlink{element_contributors}{contributors} & xs:string & \\
+\protect\hyperlink{element_releases}{releases} & xs:string & \\
+\protect\hyperlink{element_codingLanguage}{codingLanguage} & Local type
+& \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{attributes}{%
+\subsubsection{Attributes}\label{attributes}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Attribute & Type & Documentation \\
+\midrule
+\endhead
+available & xs:string & No documentation \\
+\bottomrule
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_releaseMonth}{}{}
+
+\hypertarget{element-releasemonth}{%
+\subsection{\texorpdfstring{Element { releaseMonth
+}}{Element  releaseMonth }}\label{element-releasemonth}}
+
+{element releaseMonth}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_link}{}{}
+
+\hypertarget{element-link}{%
+\subsection{\texorpdfstring{Element { link
+}}{Element  link }}\label{element-link}}
+
+{element link}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_codingLanguage}{}{}
+
+\hypertarget{element-codinglanguage}{%
+\subsection{\texorpdfstring{Element { codingLanguage
+}}{Element  codingLanguage }}\label{element-codinglanguage}}
+
+{element codingLanguage}
+
+\hypertarget{attributes-1}{%
+\subsubsection{Attributes}\label{attributes-1}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Attribute & Type & Documentation \\
+\midrule
+\endhead
+name & xs:string & No documentation \\
+share & xs:string & No documentation \\
+\bottomrule
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_description}{}{}
+
+\hypertarget{element-description}{%
+\subsection{\texorpdfstring{Element { description
+}}{Element  description }}\label{element-description}}
+
+{element description}
+
+\hypertarget{elements-1}{%
+\subsubsection{Elements}\label{elements-1}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Element & Type & Documentation \\
+\midrule
+\endhead
+\protect\hyperlink{element_shortDescr}{shortDescr} & xs:string & \\
+\protect\hyperlink{element_longDescr}{longDescr} & xs:string & \\
+\bottomrule
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_tools}{}{}
+
+\hypertarget{element-tools}{%
+\subsection{\texorpdfstring{Element { tools
+}}{Element  tools }}\label{element-tools}}
+
+{element tools}
+
+\hypertarget{elements-2}{%
+\subsubsection{Elements}\label{elements-2}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Element & Type & Documentation \\
+\midrule
+\endhead
+\protect\hyperlink{element_tool}{tool} & Local type & \\
+\bottomrule
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_version}{}{}
+
+\hypertarget{element-version}{%
+\subsection{\texorpdfstring{Element { version
+}}{Element  version }}\label{element-version}}
+
+{element version}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_tool}{}{}
+
+\hypertarget{element-tool}{%
+\subsection{\texorpdfstring{Element { tool
+}}{Element  tool }}\label{element-tool}}
+
+{element tool}
+
+\hypertarget{elements-3}{%
+\subsubsection{Elements}\label{elements-3}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Element & Type & Documentation \\
+\midrule
+\endhead
+\protect\hyperlink{element_name}{name} & xs:string & \\
+\protect\hyperlink{element_description}{description} & Local type & \\
+\protect\hyperlink{element_link}{link} & xs:string & \\
+\protect\hyperlink{element_latestRelease}{latestRelease} & Local type
+& \\
+\protect\hyperlink{element_github}{github} & Local type & \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{attributes-2}{%
+\subsubsection{Attributes}\label{attributes-2}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Attribute & Type & Documentation \\
+\midrule
+\endhead
+type & xs:string & No documentation \\
+\bottomrule
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_releases}{}{}
+
+\hypertarget{element-releases}{%
+\subsection{\texorpdfstring{Element { releases
+}}{Element  releases }}\label{element-releases}}
+
+{element releases}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_latestRelease}{}{}
+
+\hypertarget{element-latestrelease}{%
+\subsection{\texorpdfstring{Element { latestRelease
+}}{Element  latestRelease }}\label{element-latestrelease}}
+
+{element latestRelease}
+
+\hypertarget{elements-4}{%
+\subsubsection{Elements}\label{elements-4}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Element & Type & Documentation \\
+\midrule
+\endhead
+\protect\hyperlink{element_version}{version} & xs:string & \\
+\protect\hyperlink{element_releaseMonth}{releaseMonth} & xs:string & \\
+\protect\hyperlink{element_releaseYear}{releaseYear} & xs:string & \\
+\bottomrule
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_shortDescr}{}{}
+
+\hypertarget{element-shortdescr}{%
+\subsection{\texorpdfstring{Element { shortDescr
+}}{Element  shortDescr }}\label{element-shortdescr}}
+
+{element shortDescr}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_name}{}{}
+
+\hypertarget{element-name}{%
+\subsection{\texorpdfstring{Element { name
+}}{Element  name }}\label{element-name}}
+
+{element name}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_longDescr}{}{}
+
+\hypertarget{element-longdescr}{%
+\subsection{\texorpdfstring{Element { longDescr
+}}{Element  longDescr }}\label{element-longdescr}}
+
+{element longDescr}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_contributors}{}{}
+
+\hypertarget{element-contributors}{%
+\subsection{\texorpdfstring{Element { contributors
+}}{Element  contributors }}\label{element-contributors}}
+
+{element contributors}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\protect\hypertarget{element_releaseYear}{}{}
+
+\hypertarget{element-releaseyear}{%
+\subsection{\texorpdfstring{Element { releaseYear
+}}{Element  releaseYear }}\label{element-releaseyear}}
+
+{element releaseYear}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+{Generated with \href{http://www.editix.com}{EditiX XML Editor} at Wed
+Apr 20 09:08:50 CEST 2022}
+
+\end{document}
