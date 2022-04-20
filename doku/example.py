@@ -9,8 +9,8 @@ replacements_head = {}
 replacements_tail = {}
 
 # Available options: hyperref, footnotes or None
-hyperlinks = hyperref###
-
+hyperlinks = 'hyperref'###
+###clearly a change
 
 def s(start='', end='', ignoreStyle=False, ignoreContent=False):
     # helper for generating the selector objects
